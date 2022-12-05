@@ -1,8 +1,6 @@
 """
-Tarik Gürsoy
 Algorithmen und Datenstrukturen
 ESA1 Aufgabe 1 h)
-Benutzt Python 3.9
 
 Ja, es gibt bessere Lösungen aber nicht ohne einen gewissen Preis (mehr Speicherplatz), oder keinen Leistungszuwachs in Worst-Cases.
 Die Funktion largest_distance_optimized() bricht aus der Schleife heraus sobald largest

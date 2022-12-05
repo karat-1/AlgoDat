@@ -46,7 +46,8 @@ def rek_sort(A: list, start: int, end: int) -> list:
         print('Vergleich: ' + str(a) + ' mit ' + str(b))
         if a > b:
             m = i
-    A = switch_elements(m, end, A)
+    if m != end:
+        A = switch_elements(m, end, A)
     if end > start:
         A = rek_sort(A, start, end - 1)
     return A
@@ -78,7 +79,7 @@ if __name__ == "__main__":
     print(quick_sort(aufgabe_2_liste, 0, len(aufgabe_2_liste) - 1))
 
     # Aufgabe 3 mit allen Ausgaben
-    aufgabe_3_liste = [1, 1, 1, 1, 1]
+    aufgabe_3_liste = [1, 3, 5, 4, 2]
     print('Aufgabe 3:')
     print(rek_sort(aufgabe_3_liste, 0, len(aufgabe_3_liste) - 1))
 
